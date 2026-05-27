@@ -28,11 +28,9 @@ export default function CurrentFocus() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.07 }}
-              animate={{ y: [0, -6, 0] }}
-              // @ts-expect-error framer transition typing
-              style={{}}
-              className="bg-white/20 backdrop-blur border border-white/30 text-white rounded-full px-5 py-2 text-sm font-medium"
+              transition={{ delay: i * 0.07, duration: 0.4 }}
+              whileHover={{ y: -4, scale: 1.05 }}
+              className="bg-white/20 backdrop-blur border border-white/30 text-white rounded-full px-5 py-2 text-sm font-medium animate-float"
             >
               {c}
             </motion.span>
