@@ -1,26 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import FeaturedSystems from "@/components/FeaturedSystems";
+import Metrics from "@/components/Metrics";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import CurrentFocus from "@/components/CurrentFocus";
+import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Daffa Novendra Aditama — AI Content Automation Specialist" },
+      {
+        name: "description",
+        content:
+          "AI Content Automation Specialist building scalable AI-powered content systems, workflow automation, and serverless production pipelines.",
+      },
+      {
+        property: "og:title",
+        content: "Daffa Novendra Aditama — AI Content Automation Specialist",
+      },
+      {
+        property: "og:description",
+        content:
+          "Portfolio of Daffa Novendra Aditama — AI content automation, workflow systems, and scalable creative pipelines.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-[#fafafa] text-[#1a1a2e]">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <FeaturedSystems />
+        <Metrics />
+        <Projects />
+        <Skills />
+        <CurrentFocus />
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
