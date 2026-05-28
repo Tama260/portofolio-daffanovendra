@@ -7,6 +7,7 @@ import {
   Linkedin,
   Mail,
 } from "lucide-react";
+import profilePhoto from "../profile-photo.jpg";
 
 
 const PORTFOLIO_URL =
