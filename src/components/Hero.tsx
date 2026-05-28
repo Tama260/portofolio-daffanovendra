@@ -20,15 +20,13 @@ const ROLES = [
 
 const ProfileImage = () => {
   return (
-    <div className="relative w-72 h-72 md:w-80 md:h-80 mx-auto">
-      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 via-purple-600 to-indigo-600 p-[3px] shadow-2xl shadow-purple-500/40">
-        <img
-          src="/profile-photo.jpg"
-          alt="Daffa Novendra Aditama"
-          className="w-full h-full object-cover object-top rounded-full"
-        />
+    <div className="relative w-72 h-72 md:w-80 md:h-80 mx-auto flex-shrink-0">
+      <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-500 via-purple-600 to-indigo-700 p-[3px] shadow-2xl shadow-purple-500/40">
+        <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-50 to-indigo-100 flex items-center justify-center">
+          <span className="text-6xl font-black text-purple-600 tracking-tight select-none">DNA</span>
+        </div>
       </div>
-      <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-purple-400/20 to-indigo-400/20 blur-2xl animate-pulse -z-10" />
+      <div className="absolute -inset-4 rounded-full bg-purple-400/20 blur-2xl -z-10 animate-pulse" />
     </div>
   );
 };
@@ -118,8 +116,9 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-3 mt-2">
             <a
-              href="/profile-photo.jpg"
-              download
+              href={PORTFOLIO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-purple-300 text-purple-700 font-medium hover:bg-purple-50 transition"
             >
               <Download size={18} /> Download CV
