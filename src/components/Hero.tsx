@@ -7,7 +7,7 @@ import {
   Linkedin,
   Mail,
 } from "lucide-react";
-import profilePhoto from "../assets/images/profile-photo.jpg";
+
 
 const PORTFOLIO_URL =
   "https://drive.google.com/file/d/1_mdgUAaRs-XoBKza0mUhMmPNtQWqLwSu/view?usp=drive_link";
@@ -18,24 +18,15 @@ const ROLES = [
   "Workflow Systems Builder",
 ];
 
-// TO ADD YOUR PHOTO: Replace public/profile-photo.jpg with your actual photo file
 const ProfileImage = () => {
   return (
-    <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl overflow-hidden border border-purple-200 shadow-2xl shadow-purple-500/20 bg-gradient-to-br from-purple-100 to-indigo-100 flex items-center justify-center">
-      <img
-        src={profilePhoto}
-        alt="Daffa Novendra Aditama"
-        className="w-full h-full object-cover"
-        onError={(e) => {
-          const target = e.target as HTMLImageElement;
-          target.style.display = "none";
-          const parent = target.parentElement;
-          if (parent) {
-            parent.innerHTML =
-              '<div class="w-full h-full flex items-center justify-center text-7xl font-black text-[#6c3fc5]">DNA</div>';
-          }
-        }}
-      />
+    <div className="relative w-72 h-72 md:w-80 md:h-80 mx-auto">
+      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 via-purple-600 to-indigo-600 p-[3px] shadow-2xl shadow-purple-500/40">
+        <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-50 to-indigo-100 flex items-center justify-center">
+          <span className="text-5xl font-black text-purple-600 tracking-tight select-none">DNA</span>
+        </div>
+      </div>
+      <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-purple-400/20 to-indigo-400/20 blur-2xl animate-pulse -z-10" />
     </div>
   );
 };
@@ -175,9 +166,7 @@ export default function Hero() {
         >
           <div className="absolute -top-8 -right-8 w-64 h-64 bg-purple-200/30 rounded-full blur-3xl animate-float" />
           <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-indigo-200/30 rounded-full blur-3xl animate-float" />
-          <div className="relative">
-            <ProfileImage />
-          </div>
+          <ProfileImage />
         </motion.div>
       </div>
     </section>
