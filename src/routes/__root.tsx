@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Daffa Novendra Aditama — Portfolio" },
+      { name: "description", content: "AI Content Automation Specialist. Building scalable AI-powered content systems, workflow automation, and production-ready deployments. 10+ live projects." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Daffa Novendra Aditama — Portfolio" },
+      { property: "og:description", content: "AI Content Automation Specialist. Building scalable AI-powered content systems, workflow automation, and production-ready deployments. 10+ live projects." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Daffa Novendra Aditama — Portfolio" },
+      { name: "twitter:description", content: "AI Content Automation Specialist. Building scalable AI-powered content systems, workflow automation, and production-ready deployments. 10+ live projects." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/80189253-bd24-4775-81c8-586dd294dad6" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/80189253-bd24-4775-81c8-586dd294dad6" },
     ],
     links: [
       {
