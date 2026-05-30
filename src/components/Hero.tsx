@@ -26,7 +26,7 @@ const ProfileImage = () => {
         <img
           src={profilePhoto}
           alt="Daffa Novendra Aditama"
-          className="w-full h-full object-cover object-[center_5%] rounded-full"
+          className="w-full h-full object-cover object-top rounded-full"
         />
       </div>
       <div className="absolute -inset-4 rounded-full bg-purple-400/20 blur-2xl -z-10 animate-pulse" />
