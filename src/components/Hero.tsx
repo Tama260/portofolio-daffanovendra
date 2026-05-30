@@ -11,7 +11,9 @@ import profilePhoto from "../profile-photo.jpg";
 
 
 const PORTFOLIO_URL =
-  "https://drive.google.com/file/d/1_mdgUAaRs-XoBKza0mUhMmPNtQWqLwSu/view?usp=drive_link";
+  "https://drive.google.com/file/d/1IYwraTgTDulSABKdbgpBmKFh5-_uHUbk/view?usp=drive_link";
+const CV_URL =
+  "https://drive.google.com/file/d/1IYwraTgTDulSABKdbgpBmKFh5-_uHUbk/view?usp=drive_link";
 
 const ROLES = [
   "AI Content Automation Specialist",
