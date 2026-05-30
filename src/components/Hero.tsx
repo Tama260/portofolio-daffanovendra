@@ -21,12 +21,12 @@ const ROLES = [
 
 const ProfileImage = () => {
   return (
-    <div className="relative w-72 h-72 md:w-80 md:h-80 mx-auto flex-shrink-0">
+    <div className="relative w-96 h-96 md:w-[420px] md:h-[420px] mx-auto flex-shrink-0">
       <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-500 via-purple-600 to-indigo-700 p-[3px] shadow-2xl shadow-purple-500/40">
         <img
           src={profilePhoto}
           alt="Daffa Novendra Aditama"
-          className="w-full h-full object-cover object-top rounded-full"
+          className="w-full h-full object-cover object-[center_10%] rounded-full"
         />
       </div>
       <div className="absolute -inset-4 rounded-full bg-purple-400/20 blur-2xl -z-10 animate-pulse" />
