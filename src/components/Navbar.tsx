@@ -115,11 +115,12 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="/profile-photo.jpg"
-                download
+                href={PORTFOLIO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-300 text-purple-700 text-sm font-medium"
               >
-                <Download size={16} /> Download CV
+                <Download size={16} /> View CV
               </a>
               <a
                 href={PORTFOLIO_URL}
