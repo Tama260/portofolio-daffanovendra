@@ -124,7 +124,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-purple-300 text-purple-700 font-medium hover:bg-purple-50 transition"
             >
-              <Download size={18} /> Download CV
+              <Download size={18} /> View CV
             </a>
             <a
               href={PORTFOLIO_URL}
