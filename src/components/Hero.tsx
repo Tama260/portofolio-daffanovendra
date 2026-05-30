@@ -11,7 +11,7 @@ import profilePhoto from "../profile-photo.jpg";
 
 
 const PORTFOLIO_URL =
-  "https://drive.google.com/file/d/1_mdgUAaRs-XoBKza0mUhMmPNtQWqLwSu/view?usp=drive_link";
+  "https://drive.google.com/file/d/1IYwraTgTDulSABKdbgpBmKFh5-_uHUbk/view?usp=drive_link";
 
 const ROLES = [
   "AI Content Automation Specialist",
@@ -26,7 +26,7 @@ const ProfileImage = () => {
         <img
           src={profilePhoto}
           alt="Daffa Novendra Aditama"
-          className="w-full h-full object-cover object-[center_20%] rounded-full"
+          className="w-full h-full object-cover object-[center_5%] rounded-full"
         />
       </div>
       <div className="absolute -inset-4 rounded-full bg-purple-400/20 blur-2xl -z-10 animate-pulse" />
@@ -124,7 +124,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-purple-300 text-purple-700 font-medium hover:bg-purple-50 transition"
             >
-              <Download size={18} /> Download CV
+              <Download size={18} /> View CV
             </a>
             <a
               href={PORTFOLIO_URL}
