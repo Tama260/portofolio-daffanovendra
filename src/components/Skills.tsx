@@ -1,61 +1,114 @@
 import { motion } from "framer-motion";
-import { Zap, Cpu, GitMerge, Code2, Database, Palette } from "lucide-react";
+import { Brain, Zap, Plug, Database, Monitor, Wrench, Palette, Table2, Star } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 const SKILLS: { Icon: LucideIcon; title: string; items: string[] }[] = [
   {
-    Icon: Zap,
-    title: "AI Content Automation",
+    Icon: Brain,
+    title: "AI & LLM",
     items: [
-      "Content Repurposing",
-      "Workflow Automation",
-      "Multi-Platform Publishing",
-      "AI Content Pipelines",
+      "Groq AI LLaMA 3.1 & 3.3 70B",
       "Prompt Engineering",
+      "Structured Output Design",
+      "Generative AI (Text, Image, Video)",
+      "AI Scoring Systems",
+      "Brand Voice QA",
     ],
   },
   {
-    Icon: Cpu,
-    title: "AI Tools & LLMs",
+    Icon: Zap,
+    title: "Automation",
     items: [
-      "Groq LLaMA 3.3 70B",
-      "Generative AI",
-      "Pollinations.ai",
-      "Structured Prompting",
-      "AI Content Generation",
+      "Pipedream",
+      "Google Apps Script",
+      "Webhook Architecture",
+      "Serverless Pipeline Design",
+      "Multi-workflow Orchestration",
     ],
   },
   {
-    Icon: GitMerge,
-    title: "Automation & Integration",
-    items: ["Pipedream", "n8n", "REST API", "Google Apps Script", "Webhook Automation"],
-  },
-  {
-    Icon: Code2,
-    title: "Development & Deployment",
-    items: ["React", "Node.js", "Vite", "Tailwind CSS", "Netlify", "GitHub"],
+    Icon: Plug,
+    title: "API & Integration",
+    items: [
+      "REST API",
+      "Brevo API",
+      "Google Sheets API",
+      "Google Cloud Console",
+      "OAuth2",
+      "Service Account Auth",
+      "Telegram Bot API",
+      "Pollinations.ai",
+    ],
   },
   {
     Icon: Database,
-    title: "Database & Infrastructure",
+    title: "Database & Data",
     items: [
+      "Supabase PostgreSQL",
       "MongoDB Atlas",
-      "Supabase",
-      "Google Sheets Database",
-      "Serverless Workflow",
-      "Deployment Systems",
+      "Google Sheets as DB",
+      "JSON Pipeline",
+      "Data Modeling",
+    ],
+  },
+  {
+    Icon: Monitor,
+    title: "Frontend & Deploy",
+    items: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Lovable",
+      "Bolt.new",
+      "Vercel",
+      "Cloudflare",
+      "Netlify",
+      "GitHub Pages",
+      "Custom Domain Setup",
+    ],
+  },
+  {
+    Icon: Wrench,
+    title: "Dev Tools",
+    items: [
+      "Python (CLI, CRUD)",
+      "Node.js",
+      "Express.js",
+      "HTML/CSS/JS",
+      "Visual Studio Code",
+      "Git",
+      "GitHub",
     ],
   },
   {
     Icon: Palette,
     title: "Creative & Content",
     items: [
-      "Canva",
-      "Adobe Premiere Pro",
-      "CapCut",
-      "Content Strategy",
-      "Social Media Content",
-      "Visual Design",
+      "Graphic Design (Canva, Picsart, Photoroom)",
+      "Video Editing (Adobe Premiere Pro, CapCut)",
+      "Logo & Product Visual Design",
+    ],
+  },
+  {
+    Icon: Table2,
+    title: "Data & Operational",
+    items: [
+      "Microsoft Excel",
+      "Microsoft Word & PowerPoint",
+      "Notion",
+      "Google Sheets",
+    ],
+  },
+  {
+    Icon: Star,
+    title: "Soft Skills",
+    items: [
+      "Creative & Innovative Thinking",
+      "Critical Thinking",
+      "Problem Solving",
+      "Adaptability",
+      "Team Collaboration",
+      "Attention to Detail",
     ],
   },
 ];
@@ -72,7 +125,6 @@ export default function Skills() {
         >
           Core Skills
         </motion.h2>
-
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {SKILLS.map((s, i) => (
             <motion.div
